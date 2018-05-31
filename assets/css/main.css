@@ -162,6 +162,10 @@
 			width: 90%;
 		}
 
+		#logo-menu{
+			display: none;
+		}
+
 	}
 
 	@media screen and (max-width: 736px) {
@@ -2126,9 +2130,7 @@
 				width: 100%;
 			}
 
-		.image.round img {
-			border-radius: 100%;
-		}
+
 
 		.image.main {
 			display: block;
@@ -2684,8 +2686,8 @@
 
 		#header .logo {
 			color: #e12d00;
-			font-family: "Pacifico", cursive;
-			font-size: 2.5em;
+			/* font-family: "Pacifico", cursive; */
+			font-size: 1.5em;
 			letter-spacing: 2px;
 			margin-top: -5px;
 			text-decoration: none;
@@ -2921,11 +2923,12 @@
 
 	#banner {
 		padding: 14em 0 12em 0;
-		background-image: url(../../images/banner.jpg);
+		background-image: url(../../images/banner_2.jpg);
 		background-size: cover;
 		background-position: center top;
 		background-repeat: no-repeat;
 		text-align: center;
+		    min-height: 100vh;
 	}
 
 		#banner .content {
@@ -2934,6 +2937,8 @@
 			-ms-transition: opacity 1s ease-in-out, -ms-transform 0.75s ease-in-out;
 			transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
 			opacity: 1;
+			background-color: rgba(255,255,255,0.6);
+			padding: 25px 0;
 		}
 
 		#banner h1 {
@@ -2945,8 +2950,9 @@
 		}
 
 		#banner p {
-			font-size: 1.25em;
+			font-size: 2em;
 			margin-bottom: 1.75em;
+			color: #255C99;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3019,10 +3025,10 @@
 		display: -ms-flexbox;
 		-ms-flex-wrap: wrap;
 		-ms-flex-pack: justify;
-		display: -moz-flex;
+		/* display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: flex; */
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -3038,7 +3044,7 @@
 	}
 
 		#one .flex-item.left div:first-child, #one .flex-item.right div:first-child {
-			padding-top: 1em;
+			padding: 1em 0;
 		}
 
 		#one .flex-item.left div:last-child, #one .flex-item.right div:last-child {
@@ -3049,7 +3055,7 @@
 		}
 
 		#one .flex-item.left div p, #one .flex-item.right div p {
-			margin-bottom: 1em;
+			/* margin-bottom: 1em; */
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3105,6 +3111,7 @@
 				margin: 0 auto 2em auto;
 				max-width: 60%;
 			}
+			
 
 		}
 
@@ -3216,4 +3223,54 @@
 		#Logo-home{
 			width: 150px;
 			margin-bottom: 10px;
+		}
+
+		#logo-menu{
+			width: 65px;
+			padding-top: 5px;
+			margin-right: 10px;
+		}
+
+		.obj-title{
+			text-align: center;
+		}
+
+		.flex-item-2{
+			flex: 1;
+		}
+
+		.flex-item-left{
+			margin-left: 25px;
+		}
+
+		@media screen and (max-width: 980px) {
+
+
+			.flex-2{
+				flex-direction: column;
+			}
+			.flex-item-left{
+				margin-left: 0;
+			}
+
+		}
+
+
+		.contact-text{
+			margin: 0;
+			font-size: 13px;
+
+		}
+
+		.card-top{
+			height:250px;
+
+		}
+		#school{
+			background: url(../../images/school.jpg);
+			background-size: cover;
+		}
+		#people{
+			background: url(../../images/people.jpg);
+			background-size: cover;
 		}
